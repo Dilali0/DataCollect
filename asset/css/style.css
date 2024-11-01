@@ -1,0 +1,171 @@
+:root {
+  --PremalyColor: #6a55e2;
+  --BackgroundColor: #ffffff; 
+  --TextColor: #000000; 
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Shippori Mincho", serif;
+  font-style: normal;
+}
+
+body.dark-mode {
+  --PremalyColor: #333333; 
+  --BackgroundColor: #121212; 
+  --TextColor: #ffffff; 
+}
+
+body {
+  background-color: var(--BackgroundColor);
+  color: var(--TextColor);
+}
+
+
+header, footer {
+  background-color: var(--PremalyColor);
+  color: var(--TextColor);
+}
+
+Header{
+  width: 100%;
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.container nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  font-size: 18px;
+  gap: 20px ;
+}
+
+nav .logo h1{
+  padding-block: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav .darkMode{
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  border : 1px solid #fff ;
+  border-radius: 50%;
+  padding : 5px ;
+  text-align: center;
+}
+
+/************************************************************************************/
+#progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+#progress {
+  height: 100%;
+  width: 0;
+  background-color: var(--PremalyColor);
+}
+.Buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*************************************************************************************/
+.footer {
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer Bottom */
+footer {
+  background-color: var(--PremalyColor);
+  color: #fff;
+  padding: 40px 0;
+}
+.footer-content {
+  display: flex;
+  /* margin-bottom: 20px; */
+  /* gap: 300px; */
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.footer-section p {
+  color: var(--ThirdColor);
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
